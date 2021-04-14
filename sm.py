@@ -18,6 +18,7 @@ month = "04"
 year = "2021"
 
 def getList(dict):
+    """return a list of the keys of the dictionary dict"""
     list = []
     for key in dict.keys():
         list.append(key)
