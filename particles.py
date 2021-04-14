@@ -48,6 +48,6 @@ u = {
     "lifetime": False,
     "interaction": "strong, weak, electromagnetism, gravitation",
     "composition": False,
-    "color charge": "Yes"
+    "color charge": "Yes",
     "note": "lightest quark"
 }
