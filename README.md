@@ -43,14 +43,20 @@ You can also show several particles at the same time
 sm -p proton electron
 ```
 ## List of particles
-| particle name | syntax ||
-| ------------------ | ------------------ ||
-| up-quark | up ||
-| down-quark | down ||
-| charm-quark | charm ||
-| strange-quark | strange ||
-| top-quark | top ||
-| bottom-quark | bottom ||
+| particle name | syntax |
+| ------------------ | ------------------ |
+| up-quark | up |
+| down-quark | down |
+| charm-quark | charm |
+| strange-quark | strange |
+| top-quark | top |
+| bottom-quark | bottom |
+| electron | electron |
+| muon | muon |
+| tau | tau |
+| electron-neutrino | nue |
+| muon-neutrino | num |
+| tau-neutrino | nut |
 ## Versions
 ### Version 1.1
 Uploaded: 14.04.2021
