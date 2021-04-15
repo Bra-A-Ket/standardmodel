@@ -96,7 +96,8 @@ Uploaded: 15.04.2021
 Added:
 - README.md
 - electron neutrino, charm-quark, strange-quark, muon, muon neutrino, tau, tau neutrino
-- boson and fermion method
+- boson, fermion, hadron, lepton, meson, baryon method added
+- help function added
 ### Version 1.0
 Uploaded: 14.04.2021.
 - Initial version of the programm

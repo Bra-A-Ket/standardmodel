@@ -74,7 +74,7 @@ def main():
             print("1.0037(20)=1.0037 +/- 0.0020")
             print("- The notation (+...-...) indicates")
             print("1.0037(+11-4)=1.0037 + 0.0011 - 0.0004")
-            print("Mass is measured in units of energy (eV). The SI-unit would be eV / c^2 with the speed of light c.")
+            print("- Mass is measured in units of energy (eV). The SI-unit would be eV / c^2 with the speed of light c.")
             print("-------------")
             print("commands:")
             print("- Use -p <name> or --particle <name> to show information about the particle, e.g.")
