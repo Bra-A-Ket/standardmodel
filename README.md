@@ -13,7 +13,7 @@ python C:\Users\adami\Documents\Python\standardmodel\sm.py %1 %2 %3 %4 %5
 Only adjust the path to where your sm.py file is located.
 - Add the path of the batch files' directory (e.g. C:\Users\adami\Documents\Python\standardmodel)
 to the global windows path variables
-- Now you can access this program via cmd-console from any diractory, e.g.
+- Now you can access this program via cmd-console from any directory, e.g.
 ```bash
 sm --particle electron
 ```
