@@ -69,6 +69,8 @@ def main():
             print("commands:")
             print("- Use -p <name> or --particle <name> to show information about the particle, e.g.")
             print(">>> sm -p electron")
+            print("- Use -b or --boson to list all bosons")
+            print("- Use -f or --fermion to list all fermions")
 
         elif o in ("-b", "--boson"):
             print("Bosons have a integer spin. Particles with s=0 are called scalar boson, with s=1 vector boson, with s=2 tensor boson.\

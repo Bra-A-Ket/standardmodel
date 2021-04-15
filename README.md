@@ -33,7 +33,7 @@ sm --info
 sm -v
 sm --version
 ```
-- Use -p <name> or --particle <name> to see all information about the particle <name>
+- Use -p or --particle to see all information about the particle <name>
 ```bash
 sm -p electron
 sm --particle electron
@@ -41,6 +41,14 @@ sm --particle electron
 You can also show several particles at the same time
 ```bash
 sm -p proton electron
+```
+- Use -b or --boson to list all bosons
+```bash
+sm --boson
+```
+- Use -f or --fermion to list all fermions
+```bash
+sm --fermion
 ```
 ## List of particles
 | particle name | syntax |
@@ -63,6 +71,7 @@ Uploaded: 15.04.2021
 Added:
 - README.md
 - electron neutrino, charm-quark, strange-quark, muon, muon neutrino, tau, tau neutrino
+- boson and fermion method
 ### Version 1.0
 Uploaded: 14.04.2021.
 - Initial version of the programm
