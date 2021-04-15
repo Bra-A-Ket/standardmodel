@@ -50,6 +50,26 @@ sm --boson
 ```bash
 sm --fermion
 ```
+- Use -B or --baryon to list all baryons
+```bash
+sm --baryon
+```
+- Use -q or --quark to list all quarks
+```bash
+sm --quark
+```
+- Use -m or --meson to list all mesons
+```bash
+sm --fermion
+```
+- Use -H or --hadron to list all hadrons
+```bash
+sm --hadron
+```
+- Use -l or --lepton to list all leptons
+```bash
+sm --lepton
+```
 ## List of particles
 | particle name | syntax |
 | ------------------ | ------------------ |

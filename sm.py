@@ -32,8 +32,9 @@ def getList(dict):
 
 def main():
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "ivphbf",\
-        ["info", "version", "particle", "help", "boson", "fermion"])
+        opts, args = getopt.getopt(sys.argv[1:], "ivphbfBqmHl",\
+        ["info", "version", "particle", "help", "boson", "fermion", "baryon",\
+        "quark", "meson", "hadron", "lepton"])
     except getopt.GetoptError as err:
         print(err)
         sys.exit(2)
@@ -71,6 +72,11 @@ def main():
             print(">>> sm -p electron")
             print("- Use -b or --boson to list all bosons")
             print("- Use -f or --fermion to list all fermions")
+            print("- Use -B or --baryon to list all baryons")
+            print("- Use -q or --quark to list all quarks")
+            print("- Use -m or --meson to list all mesons")
+            print("- Use -H or --hadron to list all hadrons")
+            print("- Use -l or --lepton to list all leptons")
 
         elif o in ("-b", "--boson"):
             print("Bosons have a integer spin. Particles with s=0 are called scalar boson, with s=1 vector boson, with s=2 tensor boson.\
@@ -85,6 +91,41 @@ def main():
             print("Fermions have half odd integer spin, e.g. s=1/2, 3/2. They follow the Fermi-Dirac-statistics.")
             for particle in particles_:
                 bool = particle["fermion"]
+                if bool == True:
+                    print(particle["name"] + ", ")
+
+        elif o in ("-B", "--baryon"):
+            print("Baryons are particles which consist of an odd number of valence quarks.")
+            for particle in particles_:
+                bool = particle["baryon"]
+                if bool == True:
+                    print(particle["name"] + ", ")
+
+        elif o in ("-q", "--quark"):
+            print("A quark is a type of elementary particle.")
+            for particle in particles_:
+                bool = particle["quark"]
+                if bool == True:
+                    print(particle["name"] + ", ")
+
+        elif o in ("-m", "--meson"):
+            print("Mesons are particles which consist of an equal number of quarks and antiquarks.")
+            for particle in particles_:
+                bool = particle["meson"]
+                if bool == True:
+                    print(particle["name"] + ", ")
+
+        elif o in ("-H", "--hadron"):
+            print("Hardons are particles containing at least two quarks.")
+            for particle in particles_:
+                bool = particle["hadron"]
+                if bool == True:
+                    print(particle["name"] + ", ")
+
+        elif o in ("-l", "--lepton"):
+            print("A lepton is a elementary particle with half-integer spin that does not undergo strong interactons.")
+            for particle in particles_:
+                bool = particle["lepton"]
                 if bool == True:
                     print(particle["name"] + ", ")
 
