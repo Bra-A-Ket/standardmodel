@@ -10,10 +10,10 @@ from particles import *
 
 #header
 author = "Falk Adamietz"
-version = 1.0
+version = 1.1
 
 #last update
-day = "14"
+day = "15"
 month = "04"
 year = "2021"
 
