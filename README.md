@@ -4,7 +4,7 @@ information of a certain particle.
 ## Usage
 ### Add to windows path variables
 I recommend to add this python file to windows path variables.
-- Therefore save the downloaded files in a directory of your choice and copy
+- Save the downloaded files to a directory of your choice and copy
 the path of this directory, e.g. C:\Users\adami\Documents\Python\standardmodel
 - Edit sm.bat and write the console command for the execution of the sm.py file, e.g.
 ```batch
