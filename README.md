@@ -59,10 +59,10 @@ sm -p proton electron
 | tau-neutrino | nut |
 ## Versions
 ### Version 1.1
-Uploaded: 14.04.2021
+Uploaded: 15.04.2021
 Added:
 - README.md
-- electron neutrino, charm-quark, strange-quark, muon, muon neutrino
+- electron neutrino, charm-quark, strange-quark, muon, muon neutrino, tau, tau neutrino
 ### Version 1.0
 Uploaded: 14.04.2021.
 - Initial version of the programm
