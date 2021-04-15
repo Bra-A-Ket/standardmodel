@@ -17,6 +17,12 @@ day = "15"
 month = "04"
 year = "2021"
 
+#list of all particles
+particles_ = [
+    proton, up, down, charm, strange, top, bottom, electron, muon, tau,
+    nue, num, nut,
+]
+
 def getList(dict):
     """return a list of the keys of the dictionary dict"""
     list = []
@@ -26,8 +32,8 @@ def getList(dict):
 
 def main():
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "ivp",\
-        ["info", "version", "particle"])
+        opts, args = getopt.getopt(sys.argv[1:], "ivphbf",\
+        ["info", "version", "particle", "help", "boson", "fermion"])
     except getopt.GetoptError as err:
         print(err)
         sys.exit(2)
@@ -55,6 +61,30 @@ def main():
                     else:
                         print(key + ": " + item)
                 print("-------------")
+
+        elif o in ("-h", "--help"):
+            print("List of every particle and their used syntax on")
+            print("github.com/Bra-A-Ket/standardmodel")
+            print("")
+            print("commands:")
+            print("- Use -p <name> or --particle <name> to show information about the particle, e.g.")
+            print(">>> sm -p electron")
+
+        elif o in ("-b", "--boson"):
+            print("Bosons have a integer spin. Particles with s=0 are called scalar boson, with s=1 vector boson, with s=2 tensor boson.\
+            they follow the Bose-Einstein-statistics.")
+            print("")
+            for particle in particles_:
+                bool = particle["boson"]
+                if bool == True:
+                    print(particle["name"] + ", ")
+
+        elif o in ("-f", "--fermion"):
+            print("Fermions have half odd integer spin, e.g. s=1/2, 3/2. They follow the Fermi-Dirac-statistics.")
+            for particle in particles_:
+                bool = particle["fermion"]
+                if bool == True:
+                    print(particle["name"] + ", ")
 
         else:
             print("Error: Unkown arg")
