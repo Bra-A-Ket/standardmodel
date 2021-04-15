@@ -22,8 +22,8 @@ Simply execute the sm.py file:
 ```bash
 python sm.py --particle electron
 ```
-## Methods
-comming soom
+## Commands/methods
+comming soon
 ## Versions
 ### Version 1.1
 Uploaded: 14.04.2021
