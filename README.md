@@ -13,7 +13,7 @@ python C:\Users\adami\Documents\Python\standardmodel\sm.py %1 %2 %3 %4 %5
 Only adjust the path to where your sm.py file is located.
 - Add the path of the batch files' directory (e.g. C:\Users\adami\Documents\Python\standardmodel)
 to the global windows path variables
-- Now you can access this programm via cmd-console from any diractory, e.g.
+- Now you can access this program via cmd-console from any diractory, e.g.
 ```bash
 sm --particle electron
 ```
@@ -23,7 +23,7 @@ Simply execute the sm.py file:
 python sm.py --particle electron
 ```
 ## Commands/methods
-- With -i or --info print out some information about this programm
+- With -i or --info print out some information about this program
 ```bash
 sm -i
 sm --info
@@ -100,6 +100,6 @@ Added:
 - help function added
 ### Version 1.0
 Uploaded: 14.04.2021.
-- Initial version of the programm
+- Initial version of the program
 Added particles:
 - proton, electron, up-quark
