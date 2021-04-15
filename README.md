@@ -10,7 +10,7 @@ the path of this directory, e.g. C:\Users\adami\Documents\Python\standardmodel
 ```batch
 python C:\Users\adami\Documents\Python\standardmodel\sm.py %1 %2 %3 %4 %5
 ```
-and keep the %1 to %5.
+and keep the %1 to %5
 3. Add the path of the batch file (e.g. C:\Users\adami\Documents\Python\standardmodel)
 to the global windows path variables
 4. Now you can access this programm via cmd-console from any diractory, e.g.
