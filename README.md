@@ -23,7 +23,29 @@ Simply execute the sm.py file:
 python sm.py --particle electron
 ```
 ## Commands/methods
-comming soon
+- With -i or --info print out some informations about this programm
+```bash
+sm -i
+sm --info
+```
+- Use -v or --version to show the version
+```bash
+sm -v
+sm --version
+```
+- Use -p <name> or --particle <name> to see all information about the particle <name>
+```bash
+sm -p electron
+sm --particle electron
+```
+You can also show several particles at the same time
+```bash
+sm -p proton electron
+```
+## List of particles
+| particle name | syntax |
+| ------------------ | ------------------ |
+| up-quark | up |
 ## Versions
 ### Version 1.1
 Uploaded: 14.04.2021
