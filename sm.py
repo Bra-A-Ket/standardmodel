@@ -64,9 +64,18 @@ def main():
                 print("-------------")
 
         elif o in ("-h", "--help"):
+            print("-------------")
             print("List of every particle and their used syntax on")
             print("github.com/Bra-A-Ket/standardmodel")
-            print("")
+            print("-------------")
+            print("Units and errors:")
+            print("- The charge is measured in units of the elementary charge e=+1.602...e-19 As.")
+            print("- Errors are noted with perentesis () and indicate the error in the last corresponding decimals, e.g.")
+            print("1.0037(20)=1.0037 +/- 0.0020")
+            print("- The notation (+...-...) indicates")
+            print("1.0037(+11-4)=1.0037 + 0.0011 - 0.0004")
+            print("Mass is measured in units of energy (eV). The SI-unit would be eV / c^2 with the speed of light c.")
+            print("-------------")
             print("commands:")
             print("- Use -p <name> or --particle <name> to show information about the particle, e.g.")
             print(">>> sm -p electron")
@@ -77,9 +86,10 @@ def main():
             print("- Use -m or --meson to list all mesons")
             print("- Use -H or --hadron to list all hadrons")
             print("- Use -l or --lepton to list all leptons")
+            print("-------------")
 
         elif o in ("-b", "--boson"):
-            print("Bosons have a integer spin. Particles with s=0 are called scalar boson, with s=1 vector boson, with s=2 tensor boson.\
+            print("Bosons have an integer spin. Particles with s=0 are called scalar boson, with s=1 vector boson, with s=2 tensor boson.\
             they follow the Bose-Einstein-statistics.")
             print("")
             for particle in particles_:
@@ -116,14 +126,14 @@ def main():
                     print(particle["name"] + ", ")
 
         elif o in ("-H", "--hadron"):
-            print("Hardons are particles containing at least two quarks.")
+            print("A hardon is a particles containing at least two quarks.")
             for particle in particles_:
                 bool = particle["hadron"]
                 if bool == True:
                     print(particle["name"] + ", ")
 
         elif o in ("-l", "--lepton"):
-            print("A lepton is a elementary particle with half-integer spin that does not undergo strong interactons.")
+            print("A lepton is an elementary particle with half-integer spin that does not undergo strong interactons.")
             for particle in particles_:
                 bool = particle["lepton"]
                 if bool == True:

@@ -10,7 +10,7 @@ the path of this directory, e.g. C:\Users\adami\Documents\Python\standardmodel
 ```batch
 python C:\Users\adami\Documents\Python\standardmodel\sm.py %1 %2 %3 %4 %5
 ```
-and keep the %1 to %5
+Only adjust the path to where your sm.py file is located.
 - Add the path of the batch files' directory (e.g. C:\Users\adami\Documents\Python\standardmodel)
 to the global windows path variables
 - Now you can access this programm via cmd-console from any diractory, e.g.
@@ -23,7 +23,7 @@ Simply execute the sm.py file:
 python sm.py --particle electron
 ```
 ## Commands/methods
-- With -i or --info print out some informations about this programm
+- With -i or --info print out some information about this programm
 ```bash
 sm -i
 sm --info
@@ -32,6 +32,11 @@ sm --info
 ```bash
 sm -v
 sm --version
+```
+- Use -h or --help for help and information about the used units etc.
+```bash
+sm -h
+sm --help
 ```
 - Use -p or --particle to see all information about the particle <name>
 ```bash
@@ -60,7 +65,7 @@ sm --quark
 ```
 - Use -m or --meson to list all mesons
 ```bash
-sm --fermion
+sm --meson
 ```
 - Use -H or --hadron to list all hadrons
 ```bash
